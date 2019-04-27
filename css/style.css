@@ -234,9 +234,6 @@ h1, h2, h3, h4, h5, h6, figure {
     #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:after{
         background: #fff;
     }
-    #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:after{
-        background: #fff;
-    }
     
     .main-nav {
         position: fixed;
