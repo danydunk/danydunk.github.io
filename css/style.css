@@ -223,7 +223,10 @@ h1, h2, h3, h4, h5, h6, figure {
     }
     #nav.nav-transparent {
         background: transparent;
-        color: #fff;
+    }
+    
+    #nav.nav-transparent:not(.fixed-nav) nav-collapse>span{
+        background:: #fff;
     }
     .main-nav {
         position: fixed;
@@ -329,7 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	
 	.nav-collapse span, .nav-collapse span:before, .nav-collapse span:after {
 	    height: 4px;
-	    background: #FFF;
+	    background: #10161A;
 	    -webkit-transition: 0.2s all;
 	    transition: 0.2s all;
 	}
