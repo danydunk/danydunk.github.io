@@ -367,9 +367,9 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	
 	#nav.open .nav-collapse span:before {
-	    -webkit-transform: translateX(-100px) rotate(0deg);
-	    -ms-transform: translateX(-100px) rotate(0deg);
-	    transform: translateX(-100px) rotate(0deg);
+	    -webkit-transform: translateY(0px) rotate(-135deg);
+	    -ms-transform: translateY(0px) rotate(-135deg);
+	    transform: translateY(0px) rotate(-135deg);
 	}
 	
 	#nav.open .nav-collapse span:after {
