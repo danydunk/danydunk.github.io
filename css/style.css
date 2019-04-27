@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, figure {
     background: #FFF;
     -webkit-transition: 0.2s padding;
     transition: 0.2s padding;
-    z-index: 999;
+    z-index: 1001;
 }
 
 #nav.navbar {
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, figure {
         padding: 0px 0px;
     }
     #nav.nav-transparent {
-        background: #FFF;
+        background: transparent;
     }
     .main-nav {
         position: fixed;
@@ -257,10 +257,10 @@ h1, h2, h3, h4, h5, h6, figure {
         transition: 0.2s all;
     }
     .main-nav>li.active {
-        border-left: 6px solid #6195FF;
+        border-left: 6px solid rgba(0, 0, 0, 0.75);
     }
     .main-nav li a:hover, .main-nav li a:focus {
-        background-color: #6195FF;
+        background-color: rgba(0, 0, 0, 0.75);
         color: #FFF;
         opacity: 1;
     }
