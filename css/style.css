@@ -238,6 +238,10 @@ h1, h2, h3, h4, h5, h6, figure {
         background: #fff;
     }
     
+    #nav.open .nav.nav-transparent .nav-collapse span {
+	    background: transparent;
+	}
+    
     .main-nav {
         position: fixed;
         right: 0;
@@ -360,7 +364,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	
 	#nav.open .nav-collapse span {
-	    background: #10161A;
+	    background: transparent;
 	}
 	
 	#nav.open .nav-collapse span:before {
