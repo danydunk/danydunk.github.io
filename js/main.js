@@ -12,7 +12,7 @@
 	// Scrollspy
 	$('body').scrollspy({
 		target: '#nav',
-		offset: $(window).height() / 2
+		offset: $(window).height() / 3
 	});
 
 	///////////////////////////
@@ -20,15 +20,13 @@
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
-		$('html, body, header').animate({
+		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 600);
 	});
 
 	$('#back-to-top').on('click', function(){
-		$('body,html, header').animate({
-			scrollTop: 0
-		}, 600);
+		window.scrollTo(0, 0);
 	});
 
 	///////////////////////////
@@ -52,7 +50,7 @@
 		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
 
 		// Back To Top Appear
-		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+		wScroll > 500 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
 	});
 
 	///////////////////////////
