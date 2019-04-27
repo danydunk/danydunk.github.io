@@ -50,7 +50,7 @@
 		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
 
 		// Back To Top Appear
-		wScroll > 500 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
 	});
 
 	///////////////////////////
@@ -247,11 +247,7 @@
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
-
-			$('html, body, header').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
+			window.scrollTo(0, 0);
 			return false;
 		});
 
