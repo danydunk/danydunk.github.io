@@ -20,13 +20,13 @@
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
-		$('html, body').animate({
+		$('html, body, header').animate({
 			scrollTop: $(this.hash).offset().top
 		}, 600);
 	});
 
 	$('#back-to-top').on('click', function(){
-		$('body,html').animate({
+		$('body,html, header').animate({
 			scrollTop: 0
 		}, 600);
 	});
@@ -250,7 +250,7 @@
 			
 			event.preventDefault();
 
-			$('html, body').animate({
+			$('html, body, header').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
 			
