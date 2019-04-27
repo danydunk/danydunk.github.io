@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	
 	.nav-collapse span, .nav-collapse span:before, .nav-collapse span:after {
 	    height: 4px;
-	    background: #10161A;
+	    background: #FFF;
 	    -webkit-transition: 0.2s all;
 	    transition: 0.2s all;
 	}
