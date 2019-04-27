@@ -223,6 +223,7 @@ h1, h2, h3, h4, h5, h6, figure {
     }
     #nav.nav-transparent {
         background: transparent;
+        color: #fff;
     }
     .main-nav {
         position: fixed;
@@ -257,10 +258,10 @@ h1, h2, h3, h4, h5, h6, figure {
         transition: 0.2s all;
     }
     .main-nav>li.active {
-        border-left: 6px solid rgba(0, 0, 0, 0.75);
+        border-left: 6px solid rgba(241, 78, 149, 0.8);
     }
     .main-nav li a:hover, .main-nav li a:focus {
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(241, 78, 149, 0.8);
         color: #FFF;
         opacity: 1;
     }
