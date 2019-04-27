@@ -234,8 +234,9 @@ h1, h2, h3, h4, h5, h6, figure {
     #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:after{
         background: #fff;
     }
+
     
-    #nav.open .nav-transparent nav-collapse span {
+    #nav.open .nav-transparent .nav-collapse span {
 	    background: transparent;
 	}
     
@@ -348,12 +349,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	    transition: 0.2s all;
 	}
 	
-		#nav.open .nav-collapse span: {
-	    -webkit-transform: scale(0, 0);
-	    -ms-transform: scale(0, 0);
-	    transform: scale(0, 0);
-	}
-	
 	.nav-collapse span:before {
 	    -webkit-transform: translate(0%, 10px);
 	    -ms-transform: translate(0%, 10px);
@@ -364,6 +359,13 @@ h1, h2, h3, h4, h5, h6, figure {
 	    -webkit-transform: translate(0%, -14px);
 	    -ms-transform: translate(0%, -14px);
 	    transform: translate(0%, -14px);
+	}
+	
+	#nav.open .nav-collapse span {
+	    background: transparent;
+	    -webkit-transform: translateX(10px) rotate(-135deg);
+	    -ms-transform: translateX(10px) rotate(-135deg);
+	    transform: translateX(10px) rotate(-135deg);
 	}
 	
 	#nav.open .nav-collapse span:before {
