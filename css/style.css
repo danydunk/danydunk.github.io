@@ -348,6 +348,12 @@ h1, h2, h3, h4, h5, h6, figure {
 	    transition: 0.2s all;
 	}
 	
+		#nav.open .nav-collapse span {
+	    -webkit-transform: scale(0, 0);
+	    -ms-transform: scale(0, 0);
+	    transform: scale(0, 0);
+	}
+	
 	.nav-collapse span:before {
 	    -webkit-transform: translate(0%, 10px);
 	    -ms-transform: translate(0%, 10px);
@@ -358,12 +364,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	    -webkit-transform: translate(0%, -14px);
 	    -ms-transform: translate(0%, -14px);
 	    transform: translate(0%, -14px);
-	}
-	
-	#nav.open .nav-collapse span {
-	    -webkit-transform: scale(0, 0);
-	    -ms-transform: scale(0, 0);
-	    transform: scale(0, 0);
 	}
 	
 	#nav.open .nav-collapse span:before {
