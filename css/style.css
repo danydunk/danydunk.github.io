@@ -225,16 +225,13 @@ h1, h2, h3, h4, h5, h6, figure {
         background: transparent;
     }
     
-    #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span{
+    #nav.nav-transparent: .nav-collapse>span{
         background: #fff;
     }
-    #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:before{
+    #nav.nav-transparent: .nav-collapse>span:before{
         background: #fff;
     }
-    #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:after{
-        background: #fff;
-    }
-    #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span:after{
+    #nav.nav-transparent: .nav-collapse>span:after{
         background: #fff;
     }
     
