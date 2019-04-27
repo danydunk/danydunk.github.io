@@ -361,11 +361,9 @@ h1, h2, h3, h4, h5, h6, figure {
 	    transform: translate(0%, -14px);
 	}
 	
-	#nav.open .nav-collapse span: {
+	#nav.open .nav-collapse span {
 	    background: transparent;
-	    -webkit-transform: translateY(10px) rotate(-135deg);
-	    -ms-transform: translateY(10px) rotate(-135deg);
-	    transform: translateY(10px) rotate(-135deg);
+	    height: 0px;
 	}
 	
 	#nav.open .nav-collapse span:before {
