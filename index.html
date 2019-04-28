@@ -296,17 +296,15 @@
 
     // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
+        year: 2020,
+	        month: 8,
+	        day: 15,
+	        hours: 18,
+	        words: { //words displayed into the countdown
+	            days: 'day',
+	            hours: 'hour',
+	            minutes: 'minute',
+	        },
     });
 </script>
 
