@@ -3581,7 +3581,7 @@ tbody.collapse.in {
 
 .navbar {
   position: relative;
-  min-height: 55px;
+  min-height: 45px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }

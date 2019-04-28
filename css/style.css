@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6, figure {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -1031,20 +1031,20 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
