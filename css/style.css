@@ -140,7 +140,6 @@ h1, h2, h3, h4, h5, h6, figure {
     .main-nav>li>a:after {
         content: "";
         display: block;
-        background-color: rgba(241, 78, 149, 0.8);;
         height: 2px;
         width: 0%;
         -webkit-transition: 0.2s width;
