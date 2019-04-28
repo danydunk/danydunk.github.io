@@ -10,10 +10,6 @@
 * 	Template Style 
 *
 * ======================================================= */
-html {
- height:100%;
- min-height:100%;
-}
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -467,6 +463,12 @@ h1, h2, h3, h4, h5, h6, figure {
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-img {
+    background-image: url('./images/background.jpg');
+}
 }
 
 .bg-img .overlay {
