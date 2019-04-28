@@ -472,8 +472,9 @@ h1, h2, h3, h4, h5, h6, figure {
   .bg-img {
     background-image: url(../images/backgroundsmall.jpg);
     position:absolute;
-    width:100%; 
-    height:100%; 
+    width:100vw;
+    height: 100vh;
+        background-size: cover;
 }
 }
 
