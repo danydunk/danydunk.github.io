@@ -247,7 +247,12 @@
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
-			window.scrollTo(0, 0);
+			$('html, body, header').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			$('html, body, header').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
 			return false;
 		});
 
