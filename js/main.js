@@ -248,10 +248,7 @@
 			
 			event.preventDefault();
 			$('html, body, header').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			$('html, body, header').animate({
-				scrollTop: $('html').offset().top
+				scrollTop: $('html').offset().top-1000
 			}, 500, 'easeInOutExpo');
 			return false;
 		});
