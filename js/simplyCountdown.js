@@ -253,9 +253,6 @@
 
                     fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
                     fullCountDown.minutes.word.textContent = minuteWord;
-
-                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
-                    fullCountDown.seconds.word.textContent = secondWord;
                 }
             };
 
