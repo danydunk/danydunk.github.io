@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 100;
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
