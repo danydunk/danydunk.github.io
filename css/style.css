@@ -470,7 +470,19 @@ h1, h2, h3, h4, h5, h6, figure {
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  .bg-img {
+    background-image: url(../images/backgroundsmall-cropped.jpg);
+    background-position: center top;
+    position:fixed;
+    width:100vw;
+    height: 100vh;
+    background-size: cover;
+
+	}
+}
+
+@media only screen and (max-width: 480px) {
   .bg-img {
     background-image: url(../images/backgroundsmall.jpg);
     background-position: center top;
@@ -479,7 +491,7 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 100vh;
     background-size: cover;
 
-}
+	}
 }
 
 .bg-img .overlay {
