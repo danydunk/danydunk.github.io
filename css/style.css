@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, figure {
         content: "";
         display: block;
         height: 2px;
-        background-color: rgba(241, 78, 149, 0.8);;
+        background-color: rgba(241, 78, 149, 0.8);
         width: 0%;
         -webkit-transition: 0.2s width;
         transition: 0.2s width;
@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .75;
+    opacity: .6;
     background: #1C1D21;
 }
 
@@ -1210,13 +1210,13 @@ form label {
 	}
 	.simply-countdown > .simply-section .simply-amount {
   		font-size: 20px;
-  /* amounts */
-}
+  		/* amounts */
+	}
 
-.simply-countdown > .simply-section .simply-word {
-  font-size: 10px;
-  /* words */
-}
+	.simply-countdown > .simply-section .simply-word {
+  		font-size: 10px;
+  		/* words */
+	}
 }
 
 @keyframes pulse {
@@ -1979,4 +1979,126 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.languagepicker {
+	background-color: transparent;
+	position:absolute;
+	display: inline-block;
+	padding: 0;
+	height: 52px;
+	font-size: 18px;
+	overflow: hidden;
+	transition: all .3s ease;
+	margin: 0 50px 10px 0;
+	vertical-align: top;
+	float: left;
+}
+
+
+.languagepicker a{
+	color: black;
+	text-decoration: none;
+}
+
+#nav.nav-transparent:not(.fixed-nav) .languagepicker>li>a{
+	color: #FFF;
+}
+
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 52px;
+}
+@media only screen and (min-width: 767px) {
+.languagepicker li {
+	background-color: #FFF;
+	border-top: 1px solid #EEE;
+}
+#nav.nav-transparent:not(.fixed-nav) .languagepicker>li{
+	border-top: 1px solid transparent;
+	background-color: transparent;
+}
+.roundborders {
+	border-radius: 5px;
+}
+
+}
+.item>a:hover:after {
+        width: 100%;
+}
+
+.languagepicker a:first-child li {
+	border: none;
+	background: transparent !important;
+}
+
+
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+ .item>a:after {
+        content: "";
+        display: block;
+		position: relative;
+		top: -12px;
+        height: 2px;
+        background-color: rgba(241, 78, 149, 0.8);
+        width: 0%;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+    }
+
+.large:hover {
+	/* 
+	don't forget the 1px border!
+	The first language is 40px heigh, 
+	the others are 41px
+	*/
+	height: 159px;
+}
+
+@media only screen and (max-width: 767px) {
+	.languagepicker {
+		height: 46px;
+		font-size: 16px;
+	}
+	.item {
+        background-color: rgb(25, 25, 25)
+    }
+    roundborders {
+	border-radius: 0px;
+	}
+    .item>a{
+    	color: #FFF;
+}
+
+	.languagepicker li:first-child {
+		border-top: 0px solid #EEE;
+
+	}
+	.languagepicker li{
+		padding: 0px 10px;
+		line-height: 46px;
+	}
+	.item{
+	border-top: 0.5px solid gray;
+
+}
+	.large:hover {
+	/* 
+	don't forget the 1px border!
+	The first language is 40px heigh, 
+	the others are 41px
+	*/
+	height: 140px;
+}
+ .item>a:after {
+         background-color: transparent;
+
+ }
+ .item:hover {
+        background-color: rgba(241, 78, 149, 0.8);
+}
 }
