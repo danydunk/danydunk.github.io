@@ -2007,7 +2007,7 @@ form label {
 
 .languagepicker li {
 	display: block;
-	padding: 0px 20px;
+	padding: 0px 10px;
 	line-height: 52px;
 }
 @media only screen and (min-width: 767px) {
