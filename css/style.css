@@ -1293,6 +1293,9 @@ form label {
 .couple-half {
   width: 50%;
   float: left;
+  height: 150px;
+  text-align: right;
+
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
@@ -1305,7 +1308,7 @@ form label {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  width: 150px;
+  margin: auto;
   height: 150px;
 }
 .couple-half .groom img, .couple-half .bride img {
@@ -1330,19 +1333,20 @@ form label {
 .couple-half .groom {
   float: right;
   margin-right: 5px;
+  vertical-align: middle;
 }
 .couple-half .bride {
   float: left;
   margin-left: 5px;
 }
 .couple-half .desc-groom {
+  height:150px;
   padding-right: 180px;
-  padding-top: 40px;
   text-align: right;
 }
 .couple-half .desc-bride {
+  height:150px;
   padding-left: 180px;
-  padding-top: 40px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
