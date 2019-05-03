@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Daniele + Susann - Save the date</title>
+	<title>Daniele + Susann</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -39,7 +39,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	
+		
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -63,10 +63,21 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<script>
+	function getQueryVariable(variable)
+	{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+	}
+	var lang = 	getQueryVariable("lang");
+	</script>
 	</head>
 	<body>
-		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -82,9 +93,7 @@
 					<!-- Logo -->
 					<div>
 						<ul class="languagepicker roundborders large">
-						<li><a href="#nl"><img src="images/eng.png"/>English</a></li>
-						<li class="item"><a href="#de"><img src="images/est.jpg"/>Eesti</a></li>
-    					<li class="item"><a href="#en"><img src="images/ita.png"/>Italiano</a></li>
+						
 					</ul>
 					</div>
 					<!-- Collapse nav button -->
@@ -96,12 +105,11 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">Event</a></li>
-					<!-- <li><a href="#team">Team</a></li>-->
-					<li><a href="#blog">Travel</a></li>
-					<li><a href="#blog">Accomodation</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a lang="en" href="#home">Home</a><a lang="it" href="#home">Casa</a><a lang="et" href="#home">BlaBla</a></li>
+					<li><a lang="en" href="#fh5co-couple">Event</a><a lang="it" href="#fh5co-couple">Evento</a><a lang="et" href="#fh5co-couple">BlaBla</a></li>
+					<li><a lang="en" href="#blog">Travel</a><a lang="it" href="#blog">Viaggio</a><a lang="et" href="#blog">BlaBla</a></li>
+					<li><a lang="en" href="#blog">Accomodation</a><a lang="it" href="#blog">Hotel</a><a lang="et" href="#blog">BlaBla</a></li>
+					<li><a lang="en" href="#contact">Contact</a><a lang="it" href="#blog">Contatti</a><a lang="et" href="#blog">BlaBla</a></li>
 				</ul>
 				<!-- /Main navigation -->
 
@@ -117,7 +125,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Daniele &amp; Susann</h1>
-							<h2>Invite you to their wedding<br/>August 15th 2020</h2>
+							<h2 lang="en">Invite you to their wedding<br/>August 15th 2020</h2><h2 lang="it">Vi invitano al loro matrimonio<br/>15 Agosto 2020</h2><h2 lang="et">blablabla<br/>15 Agosto 2020</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">RSVP</a></p>
 						</div>
@@ -301,22 +309,81 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
+    var ul = $(".languagepicker");
+	if (lang == false) {
+		ul.append('<li><a><img src="images/eng.png"/>EN</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
+    	$('[lang="it"]').hide();
+    	$('[lang="et"]').hide();
+    	var days = "days";
+    	var hours = "hours";
+    	var minutes = "minutes";
+	} else if (lang == "it") {
+		ul.append('<li><a><img src="images/ita.png"/>IT</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="eng();"><img src="images/eng.png"/>EN</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
+    	$('[lang="en"]').hide();
+    	$('[lang="et"]').hide();
+    	var days = "giorni";
+    	var hours = "ore";
+    	var minutes = "minuti";
+	} else if (lang == "et") {
+		ul.append('<li><a><img src="images/est.jpg"/>ET</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="eng();"><img src="images/eng.png"/>EN</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
+    	$('[lang="en"]').hide();
+    	$('[lang="it"]').hide();
+    	var days = "bla";
+    	var hours = "bla";
+    	var minutes = "bla";
+	} else {
+		ul.append('<li><a><img src="images/eng.png"/>EN</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
+		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
+		$('[lang="it"]').hide();
+    	$('[lang="et"]').hide();
+    	var days = "days";
+    	var hours = "hours";
+    	var minutes = "minutes";
+	}
+	var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: 2020,
-	        month: 8,
-	        day: 15,
-	        hours: 18,
-	        words: { //words displayed into the countdown
-	            days: 'day',
-	            hours: 'hour',
-	            minutes: 'minute',
-	        },
+	    month: 8,
+	    day: 15,
+	    hours: 18,
+	    words: { //words displayed into the countdown
+	        days: days,
+	        hours: hours,
+	        minutes: minutes,
+	    },
     });
+    
+    function eng()
+    {
+    	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
+    	var curr_page = "";
+    	curr_page = curr_page + "?lang=en#"+x;
+    	window.location = curr_page;
+    }
+    function ita()
+    {	
+    	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
+    	var curr_page = "";
+    	curr_page = curr_page + "?lang=it#"+x;
+    	window.location = curr_page;
+    }
+    function est()
+    {
+    	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
+    	var curr_page = "";
+    	curr_page = curr_page + "?lang=et#"+x;
+    	window.location = curr_page;
+    }
 </script>
-
+		
 	</body>
 </html>
 

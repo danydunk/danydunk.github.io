@@ -127,7 +127,7 @@
                     seconds: 'second',
                     pluralLetter: 's'
                 },
-                plural: true,
+                plural: false,
                 inline: false,
                 enableUtc: true,
                 onEnd: function () {
