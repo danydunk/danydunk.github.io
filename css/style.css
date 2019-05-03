@@ -1290,20 +1290,9 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 768px) {
-  .heart {
-    display: none;
-  }
-}
-
 .couple-half {
   width: 50%;
   float: left;
-}
-@media screen and (max-width: 768px) {
-  .couple-half {
-    width: 100%;
-  }
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
