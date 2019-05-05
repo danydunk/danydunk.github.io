@@ -1073,7 +1073,7 @@ form label {
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -1274,7 +1274,7 @@ form label {
 
 .heart {
   position: absolute;
-  top: 4em;
+  top: 5em;
   left: 0;
   right: 0;
   z-index: 99;
@@ -1293,7 +1293,7 @@ form label {
 .couple-half {
   width: 50%;
   float: left;
-  height: 150px;
+  height: 180px;
   text-align: right;
 
 }
@@ -1301,7 +1301,7 @@ form label {
   font-family: "Sacramento", Arial, serif;
   color: #F14E95;
   font-size: 35px;
-  padding-top: 57px;
+  padding-top: 72px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1313,8 +1313,8 @@ form label {
   height: 150px;
 }
 .couple-half .groom img, .couple-half .bride img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1326,9 +1326,13 @@ form label {
     height: 140px;
   }
   .couple-half .groom img, .couple-half .bride img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     margin: 0 auto;
+  }
+  .heart {
+    top: 3em;
+  
   }
 }
 .couple-half .groom {
@@ -1341,13 +1345,11 @@ form label {
   margin-left: 5px;
 }
 .couple-half .desc-groom {
-  height:150px;
-  padding-right: 180px;
+  padding-right: 210px;
   text-align: right;
 }
 .couple-half .desc-bride {
-  height:150px;
-  padding-left: 180px;
+  padding-left: 210px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
