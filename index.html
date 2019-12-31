@@ -75,6 +75,7 @@
        return(false);
 	}
 	var lang = 	getQueryVariable("lang");
+	var rsvped = getQueryVariable("rsvped");
 	</script>
 	</head>
 	<body>
@@ -105,14 +106,14 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a lang="en" href="#home">Home</a><a lang="it" href="#home">Casa</a><a lang="et" href="#home">BlaBla</a></li>
+					<li><a lang="en" href="#home">Home</a><a lang="it" href="#home">Home</a><a lang="et" href="#home">BlaBla</a></li>
 					<li><a lang="en" href="#fh5co-couple">Event</a><a lang="it" href="#fh5co-couple">Evento</a><a lang="et" href="#fh5co-couple">BlaBla</a></li>
 					<li><a lang="en" href="#blog">Travel</a><a lang="it" href="#blog">Viaggio</a><a lang="et" href="#blog">BlaBla</a></li>
 					<li><a lang="en" href="#blog">Accomodation</a><a lang="it" href="#blog">Hotel</a><a lang="et" href="#blog">BlaBla</a></li>
-					<li><a lang="en" href="#contact">Contact</a><a lang="it" href="#blog">Contatti</a><a lang="et" href="#blog">BlaBla</a></li>
+					<li><a lang="en" href="#rsvp">RSVP</a><a lang="it" href="#rsvp">RSVP</a><a lang="et" href="#rsvp">RSVP</a></li>
+					<li><a lang="en" href="#contact">Contact</a><a lang="it" href="#contact">Contatti</a><a lang="et" href="#contact">BlaBla</a></li>
 				</ul>
 				<!-- /Main navigation -->
-
 			</div>
 		</nav>
 	<header id="home">
@@ -127,7 +128,7 @@
 							<h1>Daniele &amp; Susann</h1>
 							<h2 lang="en">Invite you to their wedding<br/>August 15th 2020</h2><h2 lang="it">Vi invitano al loro matrimonio<br/>15 Agosto 2020</h2><h2 lang="et">blablabla<br/>15 Agosto 2020</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">RSVP</a></p>
+							<p><a href="#rsvp" class="btn btn-default btn-sm">RSVP</a></p>
 						</div>
 					</div>
 				</div>
@@ -221,34 +222,51 @@
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div>
-					</form>
-				</div>
-			</div>
+		<div class="container" id="rsvp">
+            <form action="https://postmail.invotes.com/send" method="post" class="form-inline">
+                <input type="hidden" name="access_token" value="k1haeyenhlhlzp0wrjy1dwxn"/>
+                <input type="hidden" name="success_url" value=".?rsvped=ok" />
+                <input type="hidden" name="error_url" value=".?rsvped=ko" />
+                <input type="hidden" name="subject" value="RSVP"/>
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2 lang="en">Are You Attending?</h2><h2 lang="it">Parteciperai?</h2><h2 lang="et">Blablabla?</h2>
+                        <p rsvp="no" lang="en">Fill-up the form to tell us if you're attending. Thanks!</p><p rsvp="no" lang="it">Compila il form per farci sapere se parteciperai. Grazie!</p><p rsvp="no" lang="et">Blablabla</p>
+                        <p rsvp="ok" lang="en">Thank you for sending us your response. We hope to see you in Tallinn!</p><p rsvp="ok" lang="it">Grazie per la risposta! Speriamo di vederti a Tallinn!</p><p rsvp="ok" lang="et">Blablabla</p>
+                        <p rsvp="ko" lang="en">Error in sending the RSVP. Try again!</p><p rsvp="ko" lang="it">Errore nell'invio del RSVP. Riprova!</p><p rsvp="ko" lang="et">Blablabla</p>
+                    </div>
+                </div>
+                <div class="row animate-box">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label lang="en" for="name" class="sr-only">Name</label><label lang="it" for="name" class="sr-only">Nome</label><label lang="et" for="name" class="sr-only">Blablabla</label>
+                            <input onchange="manage()" required lang="en" type="name" class="form-control" name="extra_name" placeholder="Name"><input onchange="manage()" required lang="it" type="name" class="form-control" name="extra_name" placeholder="Nome"><input onchange="manage()" required lang="et" type="name" class="form-control" name="extra_name" placeholder="Blablabla">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input onchange="manage()" required type="email" class="form-control" name="extra_email" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row animate-box">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label lang="en" for="infos" class="sr-only">Tell us more. If you are coming, do you prefer the meat menu or the fish menu? Are you coming with somebody? Do you already know when you arrive to Tallin?</label><label lang="it" for="infos" class="sr-only">Dicci di pi&ugrave;. Se parteciperai, preferisci il men&ugrave; di carne o di pesce? Verrai con qualcuno? Sai gi&agrave; quando arriverai a Tallinn?</label><label lang="et" for="infos" class="sr-only">Blablabla</label>
+                            <textarea onchange="manage()" required lang="en" name="text" class="form-control" placeholder="Tell us more. If you are coming, do you prefer the meat menu or the fish menu? Are you coming with somebody? Do you already know when you arrive to Tallin?"></textarea><textarea onchange="manage()" required lang="it" name="text" class="form-control" placeholder="Dicci di pi&ugrave;. Se parteciperai, preferisci il men&ugrave; di carne o di pesce? Verrai con qualcuno? Sai gi&agrave; quando arriverai a Tallinn?"></textarea><textarea onchange="manage()" required lang="et" name="text" class="form-control" placeholder="Blablabla"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row animate-box">
+                    <div class="col-md-4 col-md-offset-2 text-center">
+                        <button lang="en" type="submit" name="extra_attending" value="Y" id="subform1" class="btn btn-default btn-block" disabled="disabled">I am Attending</button><button lang="it" type="submit" name="extra_attending" value="Y" class="btn btn-default btn-block">Parteciper&ograve;</button><button lang="et" type="submit" name="extra_attending" value="Y" class="btn btn-default btn-block">Blablabla</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <button lang="en" type="submit" name="extra_attending" value="N" id="subform2" class="btn btn-default btn-block" disabled="disabled">I am not Attending</button><button lang="it" type="submit" name="extra_attending" value="N" class="btn btn-default btn-block">Non Parteciper&ograve;</button><button lang="et" type="submit" name="extra_attending" value="N" class="btn btn-default btn-block">Blablabla</button>
+                    </div>
+                </div>
+			</form>
 		</div>
 	</div>
 
@@ -259,7 +277,7 @@
 				<div class="col-md-12 text-center">
 					<p>
 						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.com</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
@@ -305,22 +323,26 @@
 	<script src="js/main.js"></script>
 
 	<script>
+
     var ul = $(".languagepicker");
 	if (lang == false) {
 		ul.append('<li><a><img src="images/eng.png"/>EN</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
-    	$('[lang="it"]').hide();
-    	$('[lang="et"]').hide();
+    	$('[lang="it"]').remove();
+    	$('[lang="et"]').remove();
     	var days = "days";
     	var hours = "hours";
     	var minutes = "minutes";
+        var rsvpok = "thanks";
+        var rsvpko = "error";
+        var norsvp = "please";
 	} else if (lang == "it") {
 		ul.append('<li><a><img src="images/ita.png"/>IT</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="eng();"><img src="images/eng.png"/>EN</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
-    	$('[lang="en"]').hide();
-    	$('[lang="et"]').hide();
+    	$('[lang="en"]').remove();
+    	$('[lang="et"]').remove();
     	var days = "giorni";
     	var hours = "ore";
     	var minutes = "minuti";
@@ -328,8 +350,8 @@
 		ul.append('<li><a><img src="images/est.jpg"/>ET</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="eng();"><img src="images/eng.png"/>EN</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
-    	$('[lang="en"]').hide();
-    	$('[lang="it"]').hide();
+    	$('[lang="en"]').remove();
+    	$('[lang="it"]').remove();
     	var days = "bla";
     	var hours = "bla";
     	var minutes = "bla";
@@ -337,12 +359,25 @@
 		ul.append('<li><a><img src="images/eng.png"/>EN</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="ita();"><img src="images/ita.png"/>IT</a></li>');
 		ul.append('<li class="item"><a style="cursor: pointer;" onClick="est();"><img src="images/est.jpg"/>ET</a></li>');
-		$('[lang="it"]').hide();
-    	$('[lang="et"]').hide();
+		$('[lang="it"]').remove();
+    	$('[lang="et"]').remove();
     	var days = "days";
     	var hours = "hours";
     	var minutes = "minutes";
 	}
+    if (rsvped != false && rsvped == "ok") {
+    	$('[rsvp="ko"]').remove();
+    	$('[rsvp="no"]').remove();
+    } else if (rsvped != false && rsvped == "ko") {
+    	$('[rsvp="ok"]').remove();
+    	$('[rsvp="no"]').remove();
+    } else {
+    	$('[rsvp="ko"]').remove();
+    	$('[rsvp="ok"]').remove();
+    }
+
+    document.getElementById('rsvp_message').innerHTML = "sddsffsfsd";
+
 	var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -377,6 +412,36 @@
     	var curr_page = "";
     	curr_page = curr_page + "?lang=et#"+x;
     	window.location = curr_page;
+    }
+
+    function manage() {
+        var bt1 = document.getElementById('subform1');
+        var bt2 = document.getElementById('subform2');
+        var ele = document.getElementsByTagName('input'); 
+        var ele2 = document.getElementsByTagName('textarea');
+        var allfilled = true;
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].value == '') {
+                allfilled = false;
+            }
+        }
+        for (i = 0; i < ele2.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele2[i].value == '') {
+                allfilled = false;
+            }
+        }
+
+        if (allfilled) {
+            bt1.disabled = false;    // Disable the button.
+            bt2.disabled = false;    // Disable the button.
+        } else {
+            bt1.disabled = true;    // Disable the button.
+            bt2.disabled = true;    // Disable the button.
+        }
     }
 </script>
 		
