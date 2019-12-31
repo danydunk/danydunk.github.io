@@ -426,6 +426,9 @@
     {
     	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
     	var curr_page = "";
+        if (x == "home") {
+            x = "";
+        }
     	curr_page = curr_page + "?lang=en#"+x;
     	window.location = curr_page;
     }
@@ -433,6 +436,9 @@
     {	
     	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
     	var curr_page = "";
+        if (x == "home") {
+            x = "";
+        }
     	curr_page = curr_page + "?lang=it#"+x;
     	window.location = curr_page;
     }
@@ -440,6 +446,9 @@
     {
     	var x = document.getElementsByClassName("active")[0].firstChild.href.split("#")[1];
     	var curr_page = "";
+        if (x == "home") {
+            x = "";
+        }
     	curr_page = curr_page + "?lang=et#"+x;
     	window.location = curr_page;
     }
