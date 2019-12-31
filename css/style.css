@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: transparent;
+  color: rgba(255, 255, 255, 0.8);
   background: transparent;
 }
 
@@ -1043,7 +1043,7 @@ form label {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
@@ -1053,6 +1053,8 @@ form label {
   line-height: 1;
   font-weight: bolder;
   font-family: "Sacramento", Arial, serif;
+  color: white;
+  color: #F14E95;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1097,7 +1099,8 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
-  color: #F14E95;
+  color: white;
+  background-color: #F14E95;
   border: none !important;
   text-transform: uppercase;
   font-size: 22px;
@@ -1232,8 +1235,8 @@ form label {
 }
 
 #fh5co-testimonial,
-#fh5co-services,
-#fh5co-started,
+#contacts,
+#rsvp,
 #fh5co-footer,
 #fh5co-event,
 #fh5co-couple-story,
@@ -1245,8 +1248,8 @@ form label {
 }
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
-  #fh5co-services,
-  #fh5co-started,
+  #contacts,
+  #rsvp,
   #fh5co-footer,
   #fh5co-event,
   #fh5co-couple-story,
@@ -1389,7 +1392,7 @@ form label {
   background: #efefef;
   display: table;
   text-align: center;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 60px auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1403,15 +1406,24 @@ form label {
   line-height: 40px;
   color: #F14E95;
 }
-.feature-center p, .feature-center h3 {
+.feature-center p, .feature-center h3, .feature-center a {
   margin-bottom: 30px;
 }
 .feature-center h3 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #5d5d5d;
+  font-family: "Sacramento", Arial, serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #F14E95;
 }
-
+.feature-center a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.feature-center p {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
 .fh5co-heading {
   margin-bottom: 5em;
 }
@@ -1442,7 +1454,7 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: rgba(255, 255, 255, 0.8);
 }
 .fh5co-heading span {
   text-transform: uppercase;
@@ -1525,7 +1537,6 @@ form label {
 }
 
 .feature-left {
-  float: left;
   width: 100%;
   margin-bottom: 30px;
   position: relative;
@@ -1534,7 +1545,7 @@ form label {
   margin-bottom: 0;
 }
 .feature-left .icon {
-  float: left;
+  float: center;
   margin-right: 5%;
   width: 54px;
   height: 54px;
@@ -1572,28 +1583,28 @@ form label {
 }
 .feature-left .feature-copy h3 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
   color: #5d5d5d;
   margin-bottom: 10px;
 }
 
-#fh5co-started {
+#rsvp {
   position: relative;
 }
-#fh5co-started .overlay {
+#rsvp .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-#fh5co-started .fh5co-heading h2 {
+#rsvp .fh5co-heading h2 {
   color: #fff;
 }
-#fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.5);
+#rsvp .fh5co-heading p {
+  color: rgba(255, 255, 255, 0.8);
 }
-#fh5co-started .form-control {
+#rsvp .form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
   color: #fff;
@@ -1603,24 +1614,24 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-started .form-control::-webkit-input-placeholder {
+#rsvp .form-control::-webkit-input-placeholder {
   color: #fff;
 }
-#fh5co-started .form-control:-moz-placeholder {
+#rsvp .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-#fh5co-started .form-control::-moz-placeholder {
+#rsvp .form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-#fh5co-started .form-control:-ms-input-placeholder {
+#rsvp .form-control:-ms-input-placeholder {
   color: #fff;
 }
-#fh5co-started .form-control:focus {
+#rsvp .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#fh5co-started .btn {
+#rsvp .btn {
   height: 54px;
   border: none !important;
   background: #F14E95;
@@ -1631,17 +1642,18 @@ form label {
   padding-left: 50px;
   padding-right: 50px;
 }
-#fh5co-started .form-inline .form-group {
+#rsvp .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
 }
-#fh5co-started .form-inline .form-group .form-control {
+#rsvp .form-inline .form-group .form-control {
   width: 100%;
 }
-#fh5co-started .fh5co-heading {
+#rsvp .fh5co-heading {
   margin-bottom: 30px;
 }
-#fh5co-started .fh5co-heading h2 {
+#rsvp .fh5co-heading h2 {
+  color: #F14E95;
   margin-bottom: 0;
 }
 

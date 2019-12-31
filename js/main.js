@@ -20,15 +20,24 @@
 	$("a[href^='#']").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
+        var position = $(this.hash).offset().top;
+        if (position != 0) {
+            position = position - 50;
+        }
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top
+			scrollTop: position
 		}, 600);
 	});
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
+        var position = $(this.hash).offset().top;
+        var offset = document.getElementById("nav").offsetHeight;
+        if (position != 0) {
+            position = position - offset;
+        }
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top
+			scrollTop: position 
 		}, 600);
 	});
 
