@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0px 0px;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
+    min-height: 50px;
 }
 
 #nav.nav-transparent {
@@ -117,13 +118,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 /* -- default nav -- */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 993px) {
+    .languagepicker {
+        font-size: 16px;
+        margin-top: -2px;
+    }
     .main-nav li {
-        padding: 0px 15px;
+        padding: 0px 10px;
     }
     .main-nav li a {
-        font-size: 18px;
+        font-size: 16px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
@@ -216,14 +220,24 @@ h1, h2, h3, h4, h5, h6, figure {
 
 /* -- mobile nav -- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
+    .navbar-nav > li {
+        float: initial;
+    }
+    .languagepicker {
+        font-size: 18px;
+    }
+    .navbar-header {
+        float: initial;
+        min-height: 50px;
+    }
     #nav {
         padding: 0px 0px;
     }
     #nav.nav-transparent {
         background: transparent;
     }
-    
+
     #nav.nav-transparent:not(.fixed-nav) .nav-collapse>span{
         background: #fff;
     }
@@ -234,11 +248,11 @@ h1, h2, h3, h4, h5, h6, figure {
         background: #fff;
     }
 
-    
+
     #nav.open .nav-transparent .nav-collapse span {
 	    background: transparent;
 	}
-    
+
     .main-nav {
         position: fixed;
         right: 0;
@@ -250,7 +264,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
-        margin: 0;
+        margin-top: 1x;
         overflow-y: auto;
         background: #191919;
         -webkit-transition: 0.2s all;
@@ -313,7 +327,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 /* -- nav btn collapse -- */
-	
+
 	.nav-collapse {
 	    position: relative;
 	    float: right;
@@ -324,7 +338,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	    cursor: pointer;
 	    z-index: 99999;
 	}
-	
+
 	.nav-collapse span {
 	    display: block;
 	    -webkit-transform: translate(-50%, -50%);
@@ -335,47 +349,47 @@ h1, h2, h3, h4, h5, h6, figure {
 	    left: 50%;
 	    width: 25px;
 	}
-	
+
 	.nav-collapse span:before, .nav-collapse span:after {
 	    content: "";
 	    display: block;
 	}
-	
+
 	.nav-collapse span, .nav-collapse span:before, .nav-collapse span:after {
 	    height: 4px;
 	    background: #10161A;
 	    -webkit-transition: 0.2s all;
 	    transition: 0.2s all;
 	}
-	
+
 	.nav-collapse span:before {
 	    -webkit-transform: translate(0%, 10px);
 	    -ms-transform: translate(0%, 10px);
 	    transform: translate(0%, 10px);
 	}
-	
+
 	.nav-collapse span:after {
 	    -webkit-transform: translate(0%, -14px);
 	    -ms-transform: translate(0%, -14px);
 	    transform: translate(0%, -14px);
 	}
-	
+
 	#nav.open .nav-collapse span {
 	    height: 0px;
 	}
-	
+
 	#nav.open .nav-collapse span:before {
 	    -webkit-transform: translateY(0px) rotate(-135deg);
 	    -ms-transform: translateY(0px) rotate(-135deg);
 	    transform: translateY(0px) rotate(-135deg);
 	}
-	
+
 	#nav.open .nav-collapse span:after {
 	    -webkit-transform: translateY(-4px) rotate(135deg);
 	    -ms-transform: translateY(-4px) rotate(135deg);
 	    transform: translateY(-4px) rotate(135deg);
 	}
-	
+
 
 
 
@@ -466,13 +480,13 @@ h1, h2, h3, h4, h5, h6, figure {
     background-position: right top;
     background-size: cover;
     background-attachment: scroll;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background2.jpg);
 
 }
 
 @media only screen and (max-width: 768px) {
   .bg-img {
-    background-image: url(../images/backgroundsmall-cropped.jpg);
+    background-image: url(../images/background2small-cropped.jpg);
     background-position: center top;
     position:fixed;
     width:100vw;
@@ -484,7 +498,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media only screen and (max-width: 480px) {
   .bg-img {
-    background-image: url(../images/backgroundsmall.jpg);
+    background-image: url(../images/background2small.jpg);
     background-position: center top;
     position:fixed;
     width:100vw;
@@ -500,7 +514,7 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .6;
+    opacity: 0.2;
     background: #1C1D21;
 }
 
@@ -1234,6 +1248,18 @@ form label {
   }
 }
 
+.languagepicker {
+	background-color: transparent;
+	position:absolute;
+	display: inline-block;
+	padding: 0;
+	height: 52px;
+	overflow: hidden;
+	transition: all .3s ease;
+	vertical-align: top;
+	float: left;
+}
+
 #fh5co-testimonial,
 #contacts,
 #rsvp,
@@ -1406,8 +1432,8 @@ form label {
   line-height: 40px;
   color: #F14E95;
 }
-.feature-center p, .feature-center h3, .feature-center a {
-  margin-bottom: 30px;
+.feature-center p, .feature-center a {
+  margin-bottom: 60px;
 }
 .feature-center h3 {
   font-family: "Sacramento", Arial, serif;
@@ -1655,6 +1681,14 @@ form label {
 #rsvp .fh5co-heading h2 {
   color: #F14E95;
   margin-bottom: 0;
+}
+#rsvp .fh5co-heading h3 {
+  color: #F14E95;
+  margin-top: 50px;
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Sacramento", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -2002,20 +2036,6 @@ form label {
   opacity: 0;
 }
 
-.languagepicker {
-	background-color: transparent;
-	position:absolute;
-	display: inline-block;
-	padding: 0;
-	height: 52px;
-	font-size: 18px;
-	overflow: hidden;
-	transition: all .3s ease;
-	vertical-align: top;
-	float: left;
-}
-
-
 .languagepicker a{
 	color: black;
 	text-decoration: none;
@@ -2056,7 +2076,7 @@ form label {
 
 .languagepicker li img {
 	margin-right: 5px;
-	margin-bottom: 2px;
+	margin-bottom: 4px;
 }
 
  .item>a:after {
@@ -2072,18 +2092,18 @@ form label {
     }
 
 .large:hover {
-	/* 
+	/*
 	don't forget the 1px border!
-	The first language is 40px heigh, 
+	The first language is 40px heigh,
 	the others are 41px
 	*/
 	height: 162px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
 	.languagepicker {
 		height: 46px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.item {
         background-color: rgb(25, 25, 25)
