@@ -109,25 +109,54 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0px 0px;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
-    min-height: 50px;
+    height: 50px;
 }
 
 #nav.nav-transparent {
     background: transparent;
 }
 
+.container {
+    width: inherit;
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
+@media (max-width: 767px){
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container-bis {
+    width: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 992px){
+    .container-bis {
+        width: inherit;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+}
+@media (min-width: 768px){
+    .container-bis {
+        width: inherit;
+    }
+}
 /* -- default nav -- */
 @media only screen and (min-width: 993px) {
     .languagepicker {
-        font-size: 16px;
-        margin-top: -2px;
+        font-size: 15px;
     }
     .main-nav li {
-        padding: 0px 10px;
+        padding: 0px 8px;
     }
     .main-nav li a {
-        font-size: 16px;
+        font-size: 15px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
@@ -492,8 +521,10 @@ h1, h2, h3, h4, h5, h6, figure {
     width:100vw;
     height: 100vh;
     background-size: cover;
-
-	}
+  }
+  .navbar-nav {
+    margin: inherit;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1253,7 +1284,7 @@ form label {
 	position:absolute;
 	display: inline-block;
 	padding: 0;
-	height: 52px;
+	height: 50px;
 	overflow: hidden;
 	transition: all .3s ease;
 	vertical-align: top;
@@ -1263,6 +1294,7 @@ form label {
 #fh5co-testimonial,
 #contacts,
 #rsvp,
+#fh5co-services,
 #fh5co-footer,
 #fh5co-event,
 #fh5co-couple-story,
@@ -1276,6 +1308,7 @@ form label {
   #fh5co-testimonial,
   #contacts,
   #rsvp,
+  #fh5co-services,
   #fh5co-footer,
   #fh5co-event,
   #fh5co-couple-story,
@@ -2047,20 +2080,20 @@ form label {
 
 .languagepicker li {
 	display: block;
-	padding: 0px 30px;
-	line-height: 52px;
-}
-@media only screen and (min-width: 767px) {
-.languagepicker li {
-	background-color: #FFF;
-	border-top: 1px solid #EEE;
-}
-#nav.nav-transparent:not(.fixed-nav) .languagepicker>li{
-	border-top: 1px solid transparent;
-	background-color: transparent;
+	padding: 0px 25px;
+	line-height: 50px;
 }
 .roundborders {
-	border-radius: 5px;
+    border-radius: 5px;
+}
+@media only screen and (min-width: 993px) {
+.languagepicker li {
+	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+}
+#nav.nav-transparent:not(.fixed-nav) .languagepicker>li{
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
 }
 
 }
@@ -2068,8 +2101,9 @@ form label {
         width: 100%;
 }
 
-.languagepicker a:first-child li {
+li:first-child {
 	border: none;
+	border-bottom: 0px solid transparent;
 	background: transparent !important;
 }
 
@@ -2097,12 +2131,12 @@ form label {
 	The first language is 40px heigh,
 	the others are 41px
 	*/
-	height: 162px;
+	height: 156px;
 }
 
 @media only screen and (max-width: 992px) {
 	.languagepicker {
-		height: 46px;
+		height: 50px;
 		font-size: 18px;
 	}
 	.item {
@@ -2121,14 +2155,14 @@ form label {
 	}
 	.languagepicker li{
 		padding: 0px 30px;
-		line-height: 46px;
+		line-height: 50px;
 	}
 	.item{
 	border-top: 1px solid DimGray;
 
 	}
 	.large:hover {
-		height: 142px;
+		height: 156px;
 	}
  	.item>a:after {
          background-color: transparent;
