@@ -2131,9 +2131,13 @@ li:first-child {
 	The first language is 40px heigh,
 	the others are 41px
 	*/
-	height: 156px;
+	height: 152px;
 }
 
+.item{
+	height: 51px;
+
+}
 @media only screen and (max-width: 992px) {
 	.languagepicker {
 		height: 50px;
@@ -2162,7 +2166,7 @@ li:first-child {
 
 	}
 	.large:hover {
-		height: 156px;
+		height: 152px;
 	}
  	.item>a:after {
          background-color: transparent;
