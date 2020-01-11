@@ -109,11 +109,12 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0px 0px;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
-    height: 50px;
+    height: 51px;
 }
 
 #nav.nav-transparent {
     background: transparent;
+    height: 51px;
 }
 
 .container {
@@ -258,7 +259,7 @@ h1, h2, h3, h4, h5, h6, figure {
     }
     .navbar-header {
         float: initial;
-        min-height: 50px;
+        height: 51px;
     }
     #nav {
         padding: 0px 0px;
@@ -2101,9 +2102,9 @@ form label {
         width: 100%;
 }
 
-li:first-child {
+.languagepicker li:first-child {
 	border: none;
-	border-bottom: 0px solid transparent;
+	border-bottom: 1px solid #EEE;
 	background: transparent !important;
 }
 
