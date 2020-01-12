@@ -471,8 +471,16 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 
+.fh5co-img2 {
+  max-height: 600px;
+  overflow: hidden;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
 .fh5co-img {
-  height: 290px;
+  max-height: 290px;
   overflow: hidden;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -536,7 +544,6 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: scale(1.2);
 }
 /* --  background image section  -- */
-
 .bg-img {
     position: fixed;
     left: 0;
@@ -1160,9 +1167,9 @@ form label {
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 23px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 2;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h2,
@@ -1570,7 +1577,7 @@ form label {
   }
 }
 .fh5co-heading p {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
 }
