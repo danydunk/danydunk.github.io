@@ -13,7 +13,7 @@
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.8);
   background: transparent;
@@ -471,6 +471,14 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 
+.fh5co-img {
+  height: 290px;
+  overflow: hidden;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
 .fh5co-video {
   height: 450px;
   overflow: hidden;
@@ -1177,7 +1185,7 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   color: white;
-  background-color: #F14E95;
+  background-color: rgba(241, 78, 149, 0.8);
   border: none !important;
   text-transform: uppercase;
   font-size: 22px;
@@ -1326,6 +1334,8 @@ form label {
 #fh5co-testimonial,
 #contacts,
 #rsvp,
+#gift,
+#estonia,
 #wedding,
 #accomodation,
 #travel,
@@ -1346,6 +1356,8 @@ form label {
   #fh5co-testimonial,
   #contacts,
   #rsvp,
+  #gift,
+  #estonia,
   #wedding,
   #accomodation,
   #travel,
@@ -1357,6 +1369,10 @@ form label {
   .fh5co-section {
     padding: 3em 0;
   }
+}
+
+.fill-w {
+    width: 100%;
 }
 
 .fh5co-section-gray {
