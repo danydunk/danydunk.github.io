@@ -19,7 +19,6 @@
 	// Smooth scroll
 	$("a[href^='#']").on('click', function(e) {
 		e.preventDefault();
-		$('#nav').toggleClass('open');
 		var hash = this.hash;
         var position = $(this.hash).offset().top;
         if (position != 0) {
@@ -28,7 +27,6 @@
 		$('html, body').animate({
 			scrollTop: position
 		}, 600);
-        document.getElementById("nav-collapse").click();
 	});
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
