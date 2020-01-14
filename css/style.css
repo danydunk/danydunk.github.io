@@ -2270,3 +2270,9 @@ form label {
 .img-link2:hover {
     opacity: 0.6;;
 }
+
+@media only screen and (max-width: 480px) {
+    .img-link2:hover {
+            content:url(http://example.com/image.png);
+    }
+}
