@@ -1751,8 +1751,8 @@ form label {
   color: #fff;
 }
 #rsvp .form-control {
-  background: rgba(255, 255, 255, 1.0);
-  border: 1px solid #EEE !important;
+  background: rgba(255, 255, 255, 0.6);
+  border: none !important;
   color: black;
   font-size: 16px !important;
   width: 100%;
@@ -1761,21 +1761,21 @@ form label {
   transition: 0.5s;
 }
 #rsvp .form-control::-webkit-input-placeholder {
-  color: gray; 
+  color: #fff;
 }
 #rsvp .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: gray;
+  color: #fff;
 }
 #rsvp .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: gray;
+  color: #fff;
 }
 #rsvp .form-control:-ms-input-placeholder {
-  color: gray;
+  color: black;
 }
 #rsvp .form-control:focus {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
 }
 #rsvp .btn {
   height: 54px;
