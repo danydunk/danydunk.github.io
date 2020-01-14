@@ -30,7 +30,6 @@
 	});
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
-        $('#nav').toggleClass('open');
 		var hash = this.hash;
         var position = $(this.hash).offset().top;
         var offset = document.getElementById("nav").offsetHeight;
@@ -40,7 +39,9 @@
 		$('html, body').animate({
 			scrollTop: position 
 		}, 600);
-        document.getElementById("nav-collapse").click();
+        if(document.getElementById("nav").classList.contains("open")){
+            document.getElementById("nav-btn").click();
+        }
 	});
 
 	$('#back-to-top').on('click', function(){
