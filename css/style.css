@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: samanta;
-    src: url("../fonts/samantha.ttf") format("opentype");
+    src: url("../fonts/samantha.ttf") format("truetype");
 }
 @font-face {
     font-family: stmarie;
@@ -1200,6 +1200,14 @@ form label {
   color: white;
   color: #ff8c51; 
 }
+@media screen and (min-width: 993px) {
+#fh5co-header .display-tc h1,
+#fh5co-counter .display-tc h1,
+.fh5co-cover .display-tc h1 {
+  -webkit-text-stroke-width: thin!important;
+  font-size: 80px!important;
+  }
+}
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
@@ -1243,8 +1251,11 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-   font-size: 18px;
+   font-size: 22px;
    margin-bottom: 15px;
+  }
+  body{
+      font-size: 18px;
   }
 }
 #fh5co-header .display-tc .btn,
