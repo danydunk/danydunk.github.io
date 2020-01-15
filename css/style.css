@@ -21,7 +21,7 @@
 * ======================================================= */
 body {
   font-family: "Belleza", Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 1.0);
@@ -110,7 +110,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color: #ff8c51;
   font-family: "Belleza", Arial, sans-serif;
   font-weight: 500;
   margin: 0 0 20px 0;
@@ -184,28 +184,30 @@ h1, h2, h3, h4, h5, h6, figure {
     padding-right: 30px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 993px){
     .container-bis {
         width: inherit;
-        padding-left: 20px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 40px;
     }
 }
-@media (min-width: 768px){
+@media (max-width: 992px){
     .container-bis {
         width: inherit;
+        padding-left: 0px;
+        padding-right: 10px;
     }
 }
 /* -- default nav -- */
 @media only screen and (min-width: 993px) {
     .languagepicker {
-        font-size: 16px;
+        font-size: 20px;
     }
     .main-nav li {
-        padding: 0px 8px;
+        padding: 0px 7px;
     }
     .main-nav li a {
-        font-size: 18px;
+        font-size: 20px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
@@ -482,7 +484,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-bg-2 {
-  background-color: #F7F7F7;
+  background-image: url(../images/back.png);
   color: black;
 }
 .black-text {
@@ -574,13 +576,14 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -10;
     width:100vw;
     height: 100vh;
     background-position: right top;
     background-size: cover;
     background-attachment: scroll;
     background-image: url(../images/bgpic.jpg);
+    opacity: 0.9;
 
 }
 
@@ -615,8 +618,8 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.55;
-    background: gray;
+    opacity: 0.4;
+    background: lightslategray;
 }
 
 .fh5co-cover {
@@ -627,13 +630,19 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 .fh5co-cover .overlay {
-  z-index: 0;
+  z-index: -8;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
+.fh5co-bg .overlay{
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+ background: rgba(255, 255, 255, 0.5);
+ }
 .fh5co-cover > .fh5co-container {
   position: relative;
   z-index: 10;
@@ -915,6 +924,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 .timeline-body > p + p {
@@ -1049,7 +1059,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-gallery-list li a .case-studies-summary h2 {
   color: #fff;
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: bolder;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
@@ -1159,6 +1170,9 @@ form label {
   font-weight: normal !important;
 }
 
+.head {
+    font-size: 24px;
+}
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
@@ -1178,6 +1192,7 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 10px;
+  -webkit-text-stroke-width: thin;
   font-size: 80px;
   line-height: 1;
   font-family: "samantha", Arial, serif;
@@ -1185,20 +1200,27 @@ form label {
   color: white;
   color: #ff8c51; 
 }
-@media screen and (max-width: 768px) {
-  #fh5co-header .display-tc h1,
-  #fh5co-counter .display-tc h1,
-  .fh5co-cover .display-tc h1 {
-    font-size: 75px;
-    font-weight: 800;
-  }
-}
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 55px;
+    font-size: 45px;
       font-weight: 500;
+  -webkit-text-stroke-width: medium!important;
+  }
+  .fh5co-heading h2 {
+    font-size: 35px!important;
+}
+.head {
+    font-size: 22px!important;
+}
+}
+@media screen and (min-width: 481px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 60px;
+    font-weight: 800;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1213,7 +1235,7 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 }
@@ -1233,7 +1255,7 @@ form label {
   background-color: #ff8c51;
   border: none !important;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -1424,7 +1446,12 @@ form label {
 }
 
 .fh5co-section-gray {
+  font-weight: 600;
   background: rgba(0, 0, 0, 0.0);
+}
+
+.fh5co-bg-gray{
+  font-weight: 600;
 }
 
 .row-margin {
@@ -1470,8 +1497,10 @@ form label {
 }
 .couple-half h3 {
   font-family: "samantha", Arial, serif;
+  -webkit-text-stroke-width: thin;
   color: #ff8c51;
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: 600;
   padding-top: 75px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1578,6 +1607,7 @@ form label {
 }
 .feature-center h3 {
   font-family: "samantha", Arial, serif;
+  -webkit-text-stroke-width: thin;
   font-weight: bold;
   font-size: 50px;
   color: #ff8c51;
@@ -1588,7 +1618,7 @@ form label {
 }
 .feature-center p {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 1.0);
 }
 .fh5co-heading {
@@ -1599,6 +1629,7 @@ form label {
 }
 .fh5co-heading h2 {
   font-size: 50px;
+  -webkit-text-stroke-width: thin;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
@@ -1613,9 +1644,9 @@ form label {
   color: #ff8c51;
   font-family: "samantha", Arial, serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) {
   .fh5co-heading h2 {
-    font-size: 50px;
+    font-size: 45px!important;
   }
 }
 .fh5co-heading p {
@@ -1758,19 +1789,20 @@ form label {
 #rsvp {
   position: relative;
 }
-#rsvp .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -11;
 }
 #rsvp .fh5co-heading h2 {
   color: #fff;
 }
 #rsvp .form-control {
   background: rgba(255, 255, 255, 1.0);
-  border: 1px solid #EEE !important;
+  border: 1px solid #ccc !important;
   color: black;
   font-size: 16px !important;
   width: 100%;
@@ -1793,16 +1825,16 @@ form label {
   color: gray;
 }
 #rsvp .form-control:focus {
-  background: rgba(255, 255, 255, 0.1);
+  background: #EEE;
 }
 #rsvp .btn {
   height: 54px;
   border: none !important;
   background: #ff8c51;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -1818,7 +1850,6 @@ form label {
 }
 #rsvp .fh5co-heading h2 {
   color: #ff8c51;
-  margin-bottom: 0;
 }
 #rsvp .fh5co-heading h3 {
   color: #ff8c51;
@@ -2255,7 +2286,7 @@ form label {
 @media only screen and (max-width: 992px) {
 	.languagepicker {
 		height: 50px;
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.item {
         background-color: white;
@@ -2287,7 +2318,7 @@ form label {
 
  	}
  	.item:hover {
-        background-color: rgba(241, 78, 149, 1.0)!important;
+        background-color: #ff8c51!important;
 	}
 }
 .img-link {
