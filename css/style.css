@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Belleza);
+@import url(https://fonts.googleapis.com/css?family=Euphoria+Script);
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -1192,10 +1193,9 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 10px;
-  -webkit-text-stroke-width: thin;
   font-size: 80px;
   line-height: 1;
-  font-family: "samantha", Arial, serif;
+  font-family: "Euphoria Script", Arial, serif;
   font-weight: 800;
   color: white;
   color: #ff8c51; 
@@ -1204,20 +1204,19 @@ form label {
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
-  -webkit-text-stroke-width: thin!important;
-  font-size: 80px!important;
+  font-size: 120px!important;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 45px;
+    font-size: 70px;
+  -webkit-text-stroke-width: thin;
       font-weight: 500;
-  -webkit-text-stroke-width: medium!important;
   }
   .fh5co-heading h2 {
-    font-size: 35px!important;
+    font-size: 60px!important;
 }
 .head {
     font-size: 22px!important;
@@ -1227,7 +1226,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 800;
   }
 }
@@ -1257,6 +1256,11 @@ form label {
   body{
       font-size: 18px;
   }
+#fh5co-header .display-tc .btn,
+#fh5co-counter .display-tc .btn,
+.fh5co-cover .display-tc .btn {
+  font-size: 18px!important;
+}
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
@@ -1378,12 +1382,12 @@ form label {
   		width: 75px;
 	}
 	.simply-countdown > .simply-section .simply-amount {
-  		font-size: 20px;
+  		font-size: 24px;
   		/* amounts */
 	}
 
 	.simply-countdown > .simply-section .simply-word {
-  		font-size: 10px;
+  		font-size: 12px;
   		/* words */
 	}
 }
@@ -1453,7 +1457,7 @@ form label {
 }
 
 .fill-w {
-    width: 100%;
+    height: 100%;
 }
 
 .fh5co-section-gray {
@@ -1507,10 +1511,9 @@ form label {
 
 }
 .couple-half h3 {
-  font-family: "samantha", Arial, serif;
-  -webkit-text-stroke-width: thin;
+  font-family: "Euphoria Script", Arial, serif;
   color: #ff8c51;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 600;
   padding-top: 75px;
 }
@@ -1617,8 +1620,7 @@ form label {
   margin-bottom: 60px;
 }
 .feature-center h3 {
-  font-family: "samantha", Arial, serif;
-  -webkit-text-stroke-width: thin;
+  font-family: "Euphoria Script", Arial, serif;
   font-weight: bold;
   font-size: 50px;
   color: #ff8c51;
@@ -1640,12 +1642,11 @@ form label {
 }
 .fh5co-heading h2 {
   font-size: 50px;
-  -webkit-text-stroke-width: thin;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
   color: #ff8c51;
-  font-family: "samantha", Arial, serif;
+  font-family: "Euphoria Script", Arial, serif;
 }
 .fh5co-heading-2 h2 {
   font-size: 50px;
@@ -1653,11 +1654,11 @@ form label {
   line-height: 2;
   font-weight: bold;
   color: #ff8c51;
-  font-family: "samantha", Arial, serif;
+  font-family: "Euphoria Script", Arial, serif;
 }
 @media screen and (min-width: 481px) {
   .fh5co-heading h2 {
-    font-size: 45px!important;
+    font-size: 85px!important;
   }
 }
 .fh5co-heading p {
@@ -1868,7 +1869,7 @@ form label {
   font-size: 60px;
   line-height: 1.5;
   font-weight: bold;
-  font-family: "samantha", Arial, serif;
+  font-family: "Euphoria Script", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
