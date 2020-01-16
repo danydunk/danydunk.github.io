@@ -611,6 +611,12 @@ h1, h2, h3, h4, h5, h6, figure {
     background-size: cover;
 
 	}
+    .fh5co-img2 {
+    max-height: 300px;
+}
+.fill-w{
+    max-height: 300px;
+}
 }
 
 .bg-img .overlay {
