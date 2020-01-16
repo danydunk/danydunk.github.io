@@ -603,6 +603,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media only screen and (max-width: 480px) {
+    .feature-center p{
+        font-size: 26px!important;
+    }
   .bg-img {
     background-position: right top;
     position:fixed;
@@ -1637,7 +1640,7 @@ form label {
 }
 .feature-center p {
   cursor: pointer;
-  font-size: 22px;
+  font-size: 26px;
   color: rgba(255, 255, 255, 1.0);
 }
 .fh5co-heading {
