@@ -648,7 +648,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     z-index: 0;
     height: 100%;
- background: rgba(255, 255, 255, 0.5);
+ background: rgba(255, 255, 255, 0.2);
  }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -1222,7 +1222,7 @@ form label {
       font-weight: 500;
   }
   .fh5co-heading h2 {
-    font-size: 60px!important;
+    font-size: 65px!important;
 }
 .head {
     font-size: 22px!important;
@@ -1519,7 +1519,7 @@ form label {
 .couple-half h3 {
   font-family: "Euphoria Script", Arial, serif;
   color: #ff8c51;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 600;
   padding-top: 75px;
 }
@@ -1585,7 +1585,7 @@ form label {
     text-align: center;
   }
   .couple-half h3 {
-    font-size: 35px;
+    font-size: 40px;
     padding-top: 160px;
   }
 }
@@ -1664,7 +1664,7 @@ form label {
 }
 @media screen and (min-width: 481px) {
   .fh5co-heading h2 {
-    font-size: 85px!important;
+    font-size: 90px!important;
   }
 }
 .fh5co-heading p {
