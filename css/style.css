@@ -24,7 +24,7 @@ body {
   font-family: "Belleza", Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.7;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 1.0);
   background: transparent;
 }
@@ -106,15 +106,11 @@ a:hover, a:active, a:focus {
   justify-content: center; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
-p {
-  margin-bottom: 20px;
-}
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #ff8c51;
   font-family: "Belleza", Arial, sans-serif;
   font-weight: 500;
-  margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
@@ -611,6 +607,7 @@ h1, h2, h3, h4, h5, h6, figure {
         font-size: 26px!important;
     }
   .bg-img {
+    background-image: url(../images/bgpic-smaller.jpg);
     background-position: right top;
     position:fixed;
     width:100vw;
@@ -619,6 +616,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
 	}
     .fh5co-img2 {
+    max-height: 300px;
+}
+.fill-h{
     max-height: 300px;
 }
 .fill-w{
@@ -802,7 +802,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 0px 0 0px;
   position: relative;
 }
 .timeline:before {
@@ -1473,9 +1473,17 @@ form label {
 }
 
 .fill-w {
+    width: 100%;
+}
+.fill-h {
     height: 100%;
 }
-
+.subhead {
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
 .fh5co-section-gray {
   font-weight: 600;
   background: rgba(0, 0, 0, 0.0);
@@ -1488,9 +1496,11 @@ form label {
 .row-margin {
     margin-bottom: 3em;
 }
+.row-small-margin {
+    margin-bottom: 1em;
+}
 .couple-wrap {
   width: 100%;
-  padding-top: 30px;
   margin: 0 auto;
   position: relative;
 }
@@ -1523,7 +1533,7 @@ form label {
   float: left;
   height: 180px;
   text-align: right;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 
 }
 .couple-half h3 {
@@ -1651,14 +1661,15 @@ form label {
   color: rgba(255, 255, 255, 1.0);
 }
 .fh5co-heading {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   line-height: 1.5;
   font-weight: bold;
   color: #ff8c51;
@@ -1676,6 +1687,13 @@ form label {
   .fh5co-heading h2 {
     font-size: 90px!important;
   }
+}
+.fh5co-heading h3 {
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: -40px;
+  font-weight: 800;
+  color: white;
 }
 .fh5co-heading p {
   font-size: 22px;
@@ -1806,12 +1824,12 @@ form label {
     float: left;
   }
 }
-.feature-left .feature-copy h3 {
-  text-transform: uppercase;
-  font-size: 24px;
+.feature-copy h3 {
+  font-size: 32px;
   font-weight: bolder;
   color: #ff8c51;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 #rsvp {
@@ -1872,9 +1890,6 @@ form label {
 }
 #rsvp .form-inline .form-group .form-control {
   width: 100%;
-}
-#rsvp .fh5co-heading {
-  margin-bottom: 30px;
 }
 #rsvp .fh5co-heading h2 {
   color: #ff8c51;
