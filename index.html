@@ -674,8 +674,8 @@
 		<div class="container">
             <form action="https://postmail.invotes.com/send" method="post" class="form-inline">
                 <input type="hidden" name="access_token" value="k1haeyenhlhlzp0wrjy1dwxn"/>
-                <input type="hidden" name="success_url" value=".?rsvped=ok#rsvp" />
-                <input type="hidden" name="error_url" value=".?rsvped=ko#rsvp" />
+                <input type="hidden" name="success_url" value="../index.html?rsvped=ok#rsvp" />
+                <input type="hidden" name="error_url" value="../index.html?rsvped=ko#rsvp" />
                 <input type="hidden" name="subject" value="RSVP"/>
                 <div class="row animatte-box">
                     <div class="col-md-10 col-md-offset-1 text-center fh5co-heading">
@@ -689,13 +689,13 @@
                     <div class="col-md-5 col-md-offset-1">
                         <div class="form-group">
                             <label lang="en" for="name" class="sr-only">Name</label><label lang="it" for="name" class="sr-only">Nome</label><label lang="et" for="name" class="sr-only">Blablabla</label>
-                            <input onchange="manage()" required lang="en" type="name" class="form-control" name="extra_name" placeholder="Name"><input onchange="manage()" required lang="it" type="name" class="form-control" name="extra_name" placeholder="Nome"><input onchange="manage()" required lang="et" type="name" class="form-control" name="extra_name" placeholder="Blablabla">
+                            <input onload="manage()" oninput="manage()" required lang="en" type="name" class="form-control" name="extra_name" placeholder="Name"><input onload="manage()" oninput="manage()" required lang="it" type="name" class="form-control" name="extra_name" placeholder="Nome"><input onload="manage()" oninput="manage()" required lang="et" type="name" class="form-control" name="extra_name" placeholder="Blablabla">
                         </div>
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
                             <label for="email" class="sr-only">Email</label>
-                            <input onchange="manage()" required type="email" class="form-control" name="extra_email" placeholder="Email">
+                            <input oninput="manage()" required type="email" class="form-control" name="extra_email" placeholder="Email">
                         </div>
                     </div>
                 </div>
@@ -703,7 +703,7 @@
                     <div class="col-md-10 col-md-offset-1">
                         <div class="form-group">
                             <label class="text-center" lang="en" for="infos">Tell us more! Do you prefer the meat menu or the fish menu? Do you have any dietary restriction? Are you interested in the coach service and/or in the accomodation? Are you coming with somebody? When will you arrive to Tallinn?</label><label class="text-center" lang="it" for="infos">Dicci di pi&ugrave;! Preferisci il men&ugrave; di carne o di pesce? Hai qualche restrizione alimentare? Sei interessato al tranfer in corriera e/o all'alloggio? Verrai con qualcuno? Quando arriverai a Tallinn?</label><label class="text-center" lang="et" for="infos">Blablabla</label>
-                            <textarea onchange="manage()" required rows="5" lang="en" name="text" class="form-control"></textarea><textarea onchange="manage()" rows="5" required lang="it" name="text" class="form-control"></textarea><textarea onchange="manage()" rows="5" required lang="et" name="text" class="form-control"></textarea>
+                            <textarea oninput="manage()" required rows="5" lang="en" name="text" class="form-control"></textarea><textarea oninput="manage()" rows="5" required lang="it" name="text" class="form-control"></textarea><textarea oninput="manage()" rows="5" required lang="et" name="text" class="form-control"></textarea>
                         </div>
                     </div>
                 </div>
