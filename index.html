@@ -36,7 +36,6 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<!-- Animate.css -->
@@ -674,8 +673,8 @@
 		<div class="container">
             <form action="https://postmail.invotes.com/send" method="post" class="form-inline">
                 <input type="hidden" name="access_token" value="k1haeyenhlhlzp0wrjy1dwxn"/>
-                <input type="hidden" name="success_url" value="index.html?rsvped=ok#rsvp" />
-                <input type="hidden" name="error_url" value="index.html?rsvped=ko#rsvp" />
+                <input type="hidden" name="success_url" id="succurl" />
+                <input type="hidden" name="error_url" id="failurl" />
                 <input type="hidden" name="subject" value="RSVP"/>
                 <div class="row animatte-box">
                     <div class="col-md-10 col-md-offset-1 text-center fh5co-heading">
@@ -927,6 +926,11 @@
             bt2.disabled = true;    // Disable the button.
         }
     }
+    var succ = document.getElementById('succurl');
+    var failu = document.getElementById('succurl');
+    var url = location.protocol + '//' + location.host + location.pathname;
+    succ.innerHTML = url + '?rsvp=ok#rsvp';
+    failu.innerHTML = url + '?rsvp=ko#rsvp';
 </script>
 		
 	</body>
