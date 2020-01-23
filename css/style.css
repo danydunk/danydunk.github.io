@@ -483,7 +483,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-bg-2 {
-  background-image: url(../images/back.png);
+  background-image: url(../images/back.jpg);
   color: black;
 }
 .black-text {
@@ -1094,7 +1094,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-gallery-list li.full {
     max-height: 500px;
   width: 100%;
-    background-position: center;
+    background-position: center bottom;
     background-size: cover;
     margin: 0 0 0px 0%;
 }
@@ -1248,6 +1248,9 @@ form label {
 }
 }
 @media screen and (min-width: 481px) {
+    .wedimg{
+        min-height: 400px!important;
+    }
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
