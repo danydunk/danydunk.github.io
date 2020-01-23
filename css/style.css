@@ -2312,6 +2312,17 @@ form label {
 	margin-bottom: 4px;
 }
 
+ .item2>a:after {
+        content: "";
+        display: block;
+		position: relative;
+        height: 2px;
+        background-color: #ff8c51;
+        width: 0%;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+        top: -12px;
+    }
  .item>a:after {
         content: "";
         display: block;
@@ -2333,15 +2344,20 @@ form label {
 	height: 152px;
 }
 
+.item2{
+	height: 51px;
+}
 .item{
 	height: 51px;
-
 }
 @media only screen and (max-width: 992px) {
 	.languagepicker {
 		height: 50px;
 		font-size: 20px;
 	}
+	.item2 {
+        background-color: white;
+    }
 	.item {
         background-color: white;
     }
@@ -2349,6 +2365,9 @@ form label {
 	border-radius: 0px;
 	}
     .item>a{
+    	color: black;
+}
+    .item2>a{
     	color: black;
 }
 
@@ -2360,6 +2379,10 @@ form label {
 		padding: 0px 30px;
 		line-height: 50px;
 	}
+	.item2{
+	border-top: 1px solid #EEE;
+
+	}
 	.item{
 	border-top: 1px solid #EEE;
 
@@ -2367,6 +2390,10 @@ form label {
 	.large:hover {
 		height: 152px;
 	}
+ 	.item2>a:after {
+         background-color: transparent;
+
+ 	}
  	.item>a:after {
          background-color: transparent;
 
