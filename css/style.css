@@ -23,7 +23,7 @@
 body {
   font-family: "Belleza", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 1.0);
   background: transparent;
@@ -187,7 +187,6 @@ h1, h2, h3, h4, h5, h6, figure {
     .container-bis {
         width: inherit;
         padding-left: 0px;
-        padding-right: 40px;
     }
 }
 @media (max-width: 992px){
@@ -200,13 +199,13 @@ h1, h2, h3, h4, h5, h6, figure {
 /* -- default nav -- */
 @media only screen and (min-width: 993px) {
     .languagepicker {
-        font-size: 20px;
+        font-size: 21px;
     }
     .main-nav li {
         padding: 0px 7px;
     }
     .main-nav li a {
-        font-size: 20px;
+        font-size: 21px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
@@ -305,7 +304,7 @@ h1, h2, h3, h4, h5, h6, figure {
         float: initial;
     }
     .languagepicker {
-        font-size: 18px;
+        font-size: 19px;
     }
     .navbar-header {
         float: initial;
@@ -606,10 +605,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media only screen and (max-width: 480px) {
     .feature-center p{
-        font-size: 24px!important;
+        font-size: 25px!important;
     }
     .feature-center a{
-        font-size: 24px!important;
+        font-size: 25px!important;
     }
   .bg-img {
     background-image: url(../images/bgpic-smaller.jpg);
@@ -725,7 +724,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .fh5co-heading span {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
 }
@@ -770,7 +769,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
-  font-size: 20px;
+  font-size: 21px;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   display: block;
@@ -787,7 +786,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
   color: white;
-  font-size: 20px;
+  font-size: 21px;
 }
 #fh5co-counter .event-wrap .event-col,
 #fh5co-event .event-wrap .event-col {
@@ -938,7 +937,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .date {
   display: block;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -946,7 +945,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .timeline-body > p + p {
@@ -1052,7 +1051,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-gallery-list li a .case-studies-summary h3 {
     color: #fff;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600px;
 }
 #fh5co-gallery-list li a:hover:before {
@@ -1076,18 +1075,18 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
 #fh5co-gallery-list li a .case-studies-summary h2 {
   color: #fff;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bolder;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-gallery-list li a .case-studies-summary h2, h3 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
   }
 }
@@ -1146,7 +1145,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 10px;
 }
 .fh5co-social-icons li a i {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .fh5co-contact-info ul {
@@ -1176,19 +1175,19 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-osx-font-smoothing: grayscale;
 }
 .fh5co-contact-info ul li.address:before {
-  font-size: 30px;
+  font-size: 31px;
   content: "\e9d1";
 }
 .fh5co-contact-info ul li.phone:before {
-  font-size: 23px;
+  font-size: 24px;
   content: "\e9f4";
 }
 .fh5co-contact-info ul li.email:before {
-  font-size: 23px;
+  font-size: 24px;
   content: "\e9da";
 }
 .fh5co-contact-info ul li.url:before {
-  font-size: 23px;
+  font-size: 24px;
   content: "\e9af";
 }
 
@@ -1197,7 +1196,7 @@ form label {
 }
 
 .head {
-    font-size: 24px;
+    font-size: 25px;
 }
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
@@ -1244,7 +1243,7 @@ form label {
     font-size: 65px!important;
 }
 .head {
-    font-size: 22px!important;
+    font-size: 23px!important;
 }
 }
 @media screen and (min-width: 481px) {
@@ -1261,7 +1260,7 @@ form label {
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.3;
   font-weight: 600;
   margin-bottom: 40px;
@@ -1270,7 +1269,7 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 20px;
   }
 }
@@ -1278,16 +1277,16 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-   font-size: 22px;
+   font-size: 23px;
    margin-bottom: 15px;
   }
   body{
-      font-size: 18px;
+      font-size: 19px;
   }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
-  font-size: 18px!important;
+  font-size: 19px!important;
 }
 }
 #fh5co-header .display-tc .btn,
@@ -1298,7 +1297,7 @@ form label {
   background-color: #ff8c51;
   border: none !important;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 600;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -1493,7 +1492,7 @@ form label {
 .subhead {
     color: white;
     line-height: 1.3;
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 40px;
     font-weight: 400;
 }
@@ -1532,7 +1531,7 @@ form label {
   animation: pulse 1s ease infinite;
 }
 .heart i {
-  font-size: 20px;
+  font-size: 21px;
   background: #fff;
   padding: 20px;
   color: #ff8c51;
@@ -1663,12 +1662,12 @@ form label {
   color: #ff8c51;
 }
 .feature-center a {
-  font-size: 26px;
+  font-size: 27px;
   color: rgba(255, 255, 255, 0.8);
 }
 .feature-center p {
   cursor: pointer;
-  font-size: 26px;
+  font-size: 27px;
   color: rgba(255, 255, 255, 1.0);
 }
 .fh5co-heading {
@@ -1700,19 +1699,19 @@ form label {
   }
 }
 .fh5co-heading h3 {
-  font-size: 26px;
+  font-size: 27px;
   line-height: 1.5;
   margin-top: -40px;
   font-weight: 800;
   color: white;
 }
 .fh5co-heading p {
-  font-size: 22px;
+  font-size: 23px;
   line-height: 1.5;
 }
 .fh5co-heading span {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
@@ -1725,7 +1724,7 @@ form label {
   text-align: center;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -1770,7 +1769,7 @@ form label {
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
   color: #8f989f;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.6em;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide.active {
@@ -1783,7 +1782,7 @@ form label {
   width: 100%;
 }
 #fh5co-testimonial .wrap-testimony .arrow-thumb a {
-  font-size: 32px;
+  font-size: 33px;
   color: #dadada;
 }
 #fh5co-testimonial .wrap-testimony .arrow-thumb a:hover, #fh5co-testimonial .wrap-testimony .arrow-thumb a:focus, #fh5co-testimonial .wrap-testimony .arrow-thumb a:active {
@@ -1822,7 +1821,7 @@ form label {
 .feature-left .icon i {
   display: table-cell;
   vertical-align: middle;
-  font-size: 30px;
+  font-size: 31px;
   color: #ff8c51;
 }
 .feature-left .feature-copy {
@@ -1836,7 +1835,7 @@ form label {
   }
 }
 .feature-copy h3 {
-  font-size: 32px;
+  font-size: 33px;
   font-weight: bolder;
   color: #ff8c51;
   margin-bottom: 10px;
@@ -1861,7 +1860,7 @@ form label {
   background: rgba(255, 255, 255, 1.0);
   border: 1px solid #ccc !important;
   color: black;
-  font-size: 16px !important;
+  font-size: 17px !important;
   width: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1889,7 +1888,7 @@ form label {
   border: none !important;
   background: #ff8c51;
   color: #fff;
-  font-size: 20px;
+  font-size: 21px;
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 50px;
@@ -2003,7 +2002,7 @@ form label {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
-  font-size: 20px;
+  font-size: 21px;
   color: rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -2018,7 +2017,7 @@ form label {
 }
 
 .uppercase {
-  font-size: 14px;
+  font-size: 15px;
   color: #000;
   margin-bottom: 10px;
   font-weight: 700;
@@ -2067,7 +2066,7 @@ form label {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Belleza", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -2187,7 +2186,7 @@ form label {
 .btn-outline {
   background: none;
   border: 2px solid gray;
-  font-size: 16px;
+  font-size: 17px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2228,7 +2227,7 @@ form label {
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 300;
 }
 .form-control:active, .form-control:focus {
@@ -2353,7 +2352,7 @@ form label {
 @media only screen and (max-width: 992px) {
 	.languagepicker {
 		height: 50px;
-		font-size: 20px;
+		font-size: 21px;
 	}
 	.item2 {
         background-color: white;
