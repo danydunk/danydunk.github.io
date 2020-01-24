@@ -79,22 +79,20 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 .black-link {
-  font-weight: 600;
-  color: black;
+  color: #ff8c51;
 }
 .black-link:hover, .white-link:active, .white-link:focus {
   outline: none;
-  color: black;
+  color: #ff8c51;
   text-decoration: underline;
 }
 .white-link {
-    -webkit-text-stroke-width: thin;
-  font-weight: 600;
+  color: #ff8c51;
 }
 .white-link:hover, .white-link:active, .white-link:focus {
   outline: none;
-  color: white;
   text-decoration: underline;
+  color: #ff8c51;
 }
 .vertical-align {
   display: flex;
@@ -636,7 +634,7 @@ h1, h2, h3, h4, h5, h6, figure {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.4;
+    opacity: 0.3;
     background: lightslategray;
 }
 
@@ -1498,7 +1496,7 @@ form label {
 }
 .fh5co-section-gray {
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0.06);
 }
 
 .fh5co-bg-gray{
@@ -1921,6 +1919,7 @@ form label {
   }
 }
 #fh5co-footer .copyright .block {
+    background: rgba(0, 0, 0, 0.06);
   display: block;
 }
 
