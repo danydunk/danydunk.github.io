@@ -665,7 +665,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 600px;
+    height: 700px;
   }
 }
 .fh5co-cover .display-t,
@@ -818,6 +818,9 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 0px;
 }
 @media screen and (max-width: 480px) {
+  .fh5co-cover {
+    height: 600px!important;
+  }
   .timeline:before {
     margin-left: -64px;
   }
@@ -1496,7 +1499,7 @@ form label {
 }
 .fh5co-section-gray {
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .fh5co-bg-gray{
