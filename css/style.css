@@ -1230,9 +1230,10 @@ form label {
   .fh5co-cover .display-tc h1 {
     font-size: 65px;
   -webkit-text-stroke-width: thin;
-      font-weight: 600;
+      font-weight: 500;
   }
   .fh5co-heading h2 {
+  -webkit-text-stroke-width: thin;
     font-size: 63px!important;
 }
 .head {
