@@ -639,7 +639,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -662,11 +662,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover > .fh5co-container {
   position: relative;
   z-index: 10;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover {
-    height: 800px;
-  }
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
@@ -818,9 +813,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 0px;
 }
 @media screen and (max-width: 480px) {
-  .fh5co-cover {
-    height: 600px!important;
-  }
   .timeline:before {
     margin-left: -64px;
   }
