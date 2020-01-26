@@ -491,6 +491,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
   position: relative;
+  z-index: -7;
 }
 
 .fh5co-bg2 {
@@ -655,14 +656,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-bg .overlay{
     width: 100%;
-    z-index: 0;
+    z-index: -6;
     height: 100%;
  background: rgba(255, 255, 255, 0.2);
  }
-.fh5co-cover > .fh5co-container {
-  position: relative;
-  z-index: 10;
-}
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   height: 900px;
@@ -1845,7 +1842,7 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -11;
+  z-index: -9;
 }
 #rsvp .fh5co-heading h2 {
   color: #fff;
