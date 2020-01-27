@@ -603,10 +603,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media only screen and (max-width: 480px) {
     .feature-center p{
-        font-size: 25px!important;
+        font-size: 24px!important;
     }
     .feature-center a{
-        font-size: 25px!important;
+        font-size: 24px!important;
     }
   .bg-img {
     background-image: url(../images/bgpic-smaller.jpg);
@@ -1218,7 +1218,7 @@ form label {
   }
   .fh5co-heading h2 {
   -webkit-text-stroke-width: thin;
-    font-size: 63px!important;
+    font-size: 62px!important;
 }
 .head {
     font-size: 23px!important;
@@ -2417,7 +2417,7 @@ form label {
     }
     .fh5co-heading h2 {
        -webkit-text-stroke-width: initial;
-        font-size: 60px!important;
+        font-size: 58px!important;
     }
     .couple-half h3 {
        font-size: 38px;
@@ -2439,6 +2439,10 @@ form label {
        font-size: 21px;
     }
     .feature-center p {
-       font-size: 23px!important;
+       font-size: 22px!important;
+    }
+    #rsvp .btn {
+      height: 52px;
+      font-size: 19;
     }
 }
