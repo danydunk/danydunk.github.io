@@ -2427,7 +2427,7 @@ form label {
        font-size: 21px!important;
     }
     .feature-copy h3 {
-        font-size: 31px;
+        font-size: 30px;
     }
     .subhead {
         font-size: 19px;
@@ -2443,6 +2443,6 @@ form label {
     }
     #rsvp .btn {
       height: 52px;
-      font-size: 19;
+      font-size: 19px;
     }
 }
