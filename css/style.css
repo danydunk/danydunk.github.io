@@ -74,7 +74,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: white;
+  color: #ff8c51;
   outline: none;
   text-decoration: none;
 }
